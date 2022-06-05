@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--取消了body的边距-->
+    <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <style>
+        /*最后展示区域的大小取决于绑定元素的面积*/
+        #my-background {
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+
+    <link type="text/css" rel="stylesheet" href="index.css"></link>
+
+</head>
+<body>
+<div id="my-background">
+    <p class="title"></p>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://npm.elemecdn.com/vanta@latest/dist/vanta.clouds2.min.js"></script>
+<script>
+    VANTA.CLOUDS2({
+        el: "#my-background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+
+    })
+</script>
+
+
+</body>
+</html>

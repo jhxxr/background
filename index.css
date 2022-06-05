@@ -1,0 +1,8 @@
+p.title{
+    display: flex;
+    font-size: 60px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
