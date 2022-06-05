@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -19,21 +19,38 @@
 </head>
 <body>
 <div id="my-background">
-    <p class="title"></p>
+    <div id="title"><p>星染</p></div>
+    <div id="bk">
+        <div id="kuai">
+        <div id="bk-1" style="width:500px ;height:250px">1</div>
+        <div id="bk-2" style="width:500px ;height:250px">2</div>
+    </div>
+    <div id="bk">
+        <div id="kuai">
+        <div id="bk-3" style="width:500px ;height:200px">3</div>
+        <div id="bk-4" style="width:500px ;height:200px">4</div>
+    </div>
+    </div>
+
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://npm.elemecdn.com/vanta@latest/dist/vanta.clouds2.min.js"></script>
+<script src="https://npm.elemecdn.com/vanta@latest/dist/vanta.net.min.js"></script>
 <script>
-    VANTA.CLOUDS2({
-        el: "#my-background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
 
-    })
+VANTA.NET({
+            el: "#my-background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x868786,
+            backgroundColor: 0x3e414d
+})
+
+
 </script>
 
 
